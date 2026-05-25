@@ -1,0 +1,68 @@
+Project div_stack {
+  Note: "divstack database schema"
+  database_type: "PostgreSQL"
+}
+
+Table stocks {
+  Note: "銘柄"
+
+  stock_id integer [pk, increment]
+  ticker string [not null]
+  stock_name string [not null]
+  status string [not null]
+  country string [not null]
+  market_class string [not null]
+  asset_type string [not null]
+  foreign_tax_rate decimal
+  sector_topix_33 string
+  sector_gics string
+  created_at timestamp [not null]
+  delisted_at timestamp
+
+}
+
+Table dividend_receipts {
+  Note: "配当実績"
+
+  dividend_payment_id integer [pk, increment]
+  stock_id integer [not null]
+  received_at date [not null]
+  received_amount decimal [not null]
+  received_currency string [not null]
+  dividend_per_share decimal [not null]
+  quantity integer [not null]
+  gross_amount decimal [not null]
+  income_tax decimal [not null]
+  income_tax_currency string [not null]
+  income_tax_rate decimal [not null]
+  resident_tax decimal [not null]
+  resident_tax_currency string [not null]
+  resident_tax_rate decimal [not null]
+  foreign_tax decimal
+  foreign_tax_currency string
+  foreign_tax_rate decimal
+  fx_rate_id_tax integer
+  fx_rate_id_base integer
+  created_at timestamp [not null]
+
+}
+
+Table dividend_fx_rates {
+  Note: "配当計算用為替レート"
+
+  dividend_fx_rate_id integer [pk, increment]
+  currency string
+  fx_rate_type string
+  fx_rate_date date
+  rate decimal
+
+}
+
+Ref "fk_dividend_payments_stocks"
+: dividend_receipts.stock_id > stocks.stock_id
+
+Ref "fx_dividend_payments_dividend_fx_rate"
+: dividend_receipts.fx_rate_id_tax > dividend_fx_rates.dividend_fx_rate_id
+
+Ref "fx_dividend_payments_dividend_fx_rate_2"
+: dividend_receipts.fx_rate_id_base > dividend_fx_rates.dividend_fx_rate_id
