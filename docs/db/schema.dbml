@@ -14,11 +14,10 @@ Table stocks {
   market_class string [not null]
   asset_type string [not null]
   foreign_tax_rate decimal
-  sector_topix_33 string
+  sector_jpx_33 string
   sector_gics string
   created_at timestamp [not null]
   delisted_at timestamp
-
 }
 
 Table dividend_receipts {
@@ -44,7 +43,6 @@ Table dividend_receipts {
   fx_rate_id_tax integer
   fx_rate_id_base integer
   created_at timestamp [not null]
-
 }
 
 Table dividend_fx_rates {
@@ -55,7 +53,16 @@ Table dividend_fx_rates {
   fx_rate_type string
   fx_rate_date date
   rate decimal
+}
 
+Table living_expense_items {
+  Note: "生活費項目管理"
+
+  living_expense_item_id integer [pk, increment]
+  living_expense_item_name string [not null]
+  priority integer [not null]
+  annual_budget decimal [not null]
+  created_at timestamp [not null]
 }
 
 Ref "fk_dividend_payments_stocks"

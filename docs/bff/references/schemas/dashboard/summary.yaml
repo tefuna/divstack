@@ -1,0 +1,16 @@
+type: object
+
+properties:
+  receivedAmountTotal:
+    type: integer
+  grossAmountTotal:
+    type: integer
+  byCountry:
+    type: array
+    items:
+      $ref: "./countrySummary.yaml"
+
+required:
+  - receivedAmountTotal
+  - grossAmountTotal
+  - byCountry

@@ -1,0 +1,20 @@
+type: object
+
+properties:
+  country:
+    type: string
+    description: ISO 3166-1 alpha-2
+  countryName:
+    type: string
+  receivedAmount:
+    type: integer
+  rate:
+    type: number
+    format: double
+    description: 百分率
+
+required:
+  - country
+  - countryName
+  - receivedAmount
+  - rate

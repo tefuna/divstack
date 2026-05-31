@@ -1,0 +1,10 @@
+type: object
+
+properties:
+  livingExpenseItems:
+    type: array
+    items:
+      $ref: "./livingExpenseItem.yaml"
+
+required:
+  - livingExpenseItems

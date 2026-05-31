@@ -1,0 +1,82 @@
+{
+  "targetYear": 2026,
+  "generatedAt": "2026-01-01T12:34:56.789",
+  "summary": {
+    "receivedAmountTotal": 1200000,
+    "grossAmountTotal": 1500000,
+    "byCountry": [
+      {
+        "country": "JP",
+        "countryName": "日本",
+        "receivedAmount": 800000,
+        "rate": 0.7
+      },
+      {
+        "country": "US",
+        "countryName": "米国",
+        "receivedAmount": 400000,
+        "rate": 0.3
+      }
+    ]
+  },
+  "history": {
+    "yearlyDividends": [
+      {
+        "year": 2022,
+        "receivedAmountTotal": 300000
+      },
+      {
+        "year": 2023,
+        "receivedAmountTotal": 500000
+      },
+      {
+        "year": 2024,
+        "receivedAmountTotal": 700000
+      },
+      {
+        "year": 2025,
+        "receivedAmountTotal": 900000
+      },
+      {
+        "year": 2026,
+        "receivedAmountTotal": 1000000
+      }
+    ]
+  },
+  "livingExpenseCoverage": {
+    "livingExpenseItems": [
+      {
+        "itemName": "水道光熱費",
+        "priority": 1,
+        "budget": 120000,
+        "coverageRate": 1.0,
+        "cumulativeBudget": 120000,
+        "cumulativeCoverageRate": 1.0
+      },
+      {
+        "itemName": "通信費",
+        "priority": 2,
+        "budget": 60000,
+        "coverageRate": 1.0,
+        "cumulativeBudget": 180000,
+        "cumulativeCoverageRate": 1.0
+      }
+    ]
+  },
+  "ranking": {
+    "grossAmountRanking": [
+      {
+        "rank": 1,
+        "ticker": "8058",
+        "stockName": "三菱商事",
+        "grossAmount": 50000
+      },
+      {
+        "rank": 2,
+        "ticker": "VYM",
+        "stockName": "Vanguard High Dividend Yield Index Fund ETF",
+        "grossAmount": 49111
+      }
+    ]
+  }
+}

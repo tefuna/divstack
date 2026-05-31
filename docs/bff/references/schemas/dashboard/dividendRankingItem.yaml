@@ -1,0 +1,17 @@
+type: object
+
+properties:
+  rank:
+    type: integer
+  ticker:
+    type: string
+  stockName:
+    type: string
+  grossAmount:
+    type: integer
+
+required:
+  - rank
+  - ticker
+  - stockName
+  - grossAmount

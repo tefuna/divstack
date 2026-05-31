@@ -1,0 +1,10 @@
+type: object
+
+properties:
+  grossAmountRanking:
+    type: array
+    items:
+      $ref: "./dividendRanking.yaml"
+
+required:
+  - grossAmountRanking

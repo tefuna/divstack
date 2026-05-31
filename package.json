@@ -1,0 +1,12 @@
+{
+  "name": "divstack",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@redocly/cli": "^2.31.5"
+  },
+  "scripts": {
+    "bff:lint": "redocly lint docs/bff/references/divstack.v1.yaml",
+    "bff:bundle": "redocly bundle docs/bff/references/divstack.v1.yaml -o dist/bff/divstack.v1.yaml",
+    "bff:docs": "redocly build-docs docs/bff/references/divstack.v1.yaml -o dist/bff/api-docs.html"
+  }
+}

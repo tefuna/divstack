@@ -1,0 +1,25 @@
+openapi: 3.0.0
+
+info:
+  title: divstack bff api
+  version: "1.0.0"
+  description: |
+    divstack bff api.
+  contact:
+    name: tefuna
+    url: https://github.com/tefuna
+  license:
+    name: All Rights Reserved
+    url: https://github.com/tefuna
+
+tags:
+  - name: dashboard
+    description: api for dashboard page.
+
+servers:
+  - url: http://127.0.0.1:3118
+    description: local mock server.
+
+paths:
+  /dashboard:
+    $ref: "./paths/dashboard.yaml"

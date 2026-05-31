@@ -1,0 +1,25 @@
+type: object
+
+properties:
+  itemName:
+    type: string
+  priority:
+    type: integer
+  budget:
+    type: integer
+  coverageRate:
+    type: number
+    description: 百分率
+  cumulativeBudget:
+    type: integer
+  cumulativeCoverageRate:
+    type: number
+    description: 百分率
+
+required:
+  - itemName
+  - priority
+  - budget
+  - coverageRate
+  - cumulativeBudget
+  - cumulativeCoverageRate

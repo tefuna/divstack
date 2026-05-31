@@ -1,0 +1,20 @@
+type: object
+
+properties:
+  yearlyDividends:
+    type: array
+    items:
+      type: object
+
+      properties:
+        year:
+          type: integer
+        receivedAmountTotal:
+          type: integer
+
+      required:
+        - year
+        - receivedAmountTotal
+
+required:
+  - yearlyDividends

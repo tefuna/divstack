@@ -1,0 +1,23 @@
+type: object
+
+properties:
+  targetYear:
+    type: integer
+  generatedAt:
+    type: string
+    format: date-time
+  summary:
+    $ref: "./summary.yaml"
+  history:
+    $ref: "./history.yaml"
+  livingExpenseCoverage:
+    $ref: "./livingExpenseCoverage.yaml"
+  dividendRanking:
+    $ref: "./dividendRanking.yaml"
+
+required:
+  - generatedAt
+  - summary
+  - history
+  - livingExpenseCoverage
+  - dividendRanking

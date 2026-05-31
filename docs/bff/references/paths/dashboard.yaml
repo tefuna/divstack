@@ -1,0 +1,31 @@
+get:
+  operationId: getDashboard
+  summary: ダッシュボード画面の表示情報を取得する
+  description: |
+    ダッシュボード画面の表示情報を取得する
+  tags:
+    - dashboard
+  security: []
+
+  parameters:
+    - $ref: "../parameters/targetYear.yaml"
+
+  responses:
+    "200":
+      description: OK
+      headers:
+        $ref: "../headers/commonResponseHeader.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/dashboard/dashboardResponse.yaml"
+          # examples:
+
+    "400":
+      description: Bad Request
+      headers:
+        $ref: "../headers/commonResponseHeader.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/error/400.yaml"
