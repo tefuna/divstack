@@ -1,0 +1,21 @@
+name: プロジェクト課題
+description: プロジェクト推進上の課題・未決定事項に関するissue
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: どのような課題を抱えてissueを立てたのか、経緯や前提を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: do
+    attributes:
+      label: やること
+      description: このissueで取り組むことを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: remarks
+    attributes:
+      label: 備考

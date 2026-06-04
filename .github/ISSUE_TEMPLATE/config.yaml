@@ -1,0 +1,32 @@
+blank_issues_enabled: false
+# contact_links:
+#   - name: 質問・相談
+#     url: https://github.com/habitat-hub/board-game-prototype/discussions
+#     about: バグ報告や機能リクエスト以外の質問・相談はDiscussionsをご利用ください。
+
+# # Issue作成時のテンプレート設定
+# defaults:
+#   - template: "bug_report.yml"
+#     name: "🐛 バグ報告"
+#     about: "バグを報告する"
+#     labels: ["bug"]
+
+#   - template: "feature_request.yml"
+#     name: "💡 機能リクエスト"
+#     about: "新機能のアイデアを提案する"
+#     labels: ["feature"]
+
+#   - template: "documentation.yml"
+#     name: "✍️ ドキュメント改善"
+#     about: "READMEやガイドなどの文書の改善提案"
+#     labels: ["documentation"]
+
+#   - template: "test_request.yml"
+#     name: "🧪 テスト改善"
+#     about: "テストコードの改善や新しいテストケースの提案"
+#     labels: ["test"]
+
+#   - template: "ci_cd.yml"
+#     name: "📦 インフラ・CI/CD改善"
+#     about: "Docker、GitHub Actions、AWSなどのCI/CD・インフラに関する提案を記入してください"
+#     labels: ["ci/cd"]
