@@ -7,7 +7,7 @@
 ### dbdiagram
 
 - テーブル設計、ERD作成に使用
-- https://dbdiagram.io/ への登録が必要
+- <https://dbdiagram.io/> への登録が必要
 - 設計書として.dbmlファイルを管理
 - vscode extention
   - [dbdiagram](https://marketplace.visualstudio.com/items?itemName=dbdiagram.dbdiagram-vscode)
@@ -94,3 +94,10 @@
     ```
 
 ## 開発環境
+
+- vscode + devcontainer
+
+### ローカル端末にインストール
+
+- Docker Desktop
+- vscode
