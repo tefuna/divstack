@@ -2,17 +2,15 @@ name: プロジェクト課題
 description: プロジェクト推進上の課題・未決定事項に関するissue
 body:
   - type: textarea
-    id: background
+    id: contents
     attributes:
-      label: 背景
-      description: どのような課題を抱えてissueを立てたのか、経緯や前提を記載してください。
+      label: 課題内容
     validations:
       required: true
   - type: textarea
-    id: do
+    id: todo
     attributes:
-      label: やること
-      description: このissueで取り組むことを記載してください。
+      label: やること、完了条件
     validations:
       required: true
   - type: textarea
