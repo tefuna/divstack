@@ -1,6 +1,6 @@
 {
-  "cSpell.words": [
-    "delisted",
-    "divstack"
-  ]
+    "textlint.configPath": ".textlintrc.jsonc",
+
+    // FIXME: todo-treeのripgrepパス不在問題により、ローカルにripgrep.exeをインストール。
+    // todo-treeのバージョンアップにより解決するかも。
 }

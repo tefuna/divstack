@@ -1,0 +1,4 @@
+#!/bin/bash
+
+npm run textlint
+npm run cspell

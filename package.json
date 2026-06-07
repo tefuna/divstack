@@ -2,11 +2,27 @@
   "name": "divstack",
   "version": "1.0.0",
   "devDependencies": {
-    "@redocly/cli": "^2.31.5"
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@redocly/cli": "^2.31.5",
+    "cspell": "^10.0.1",
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.22.1",
+    "textlint": "^15.7.1",
+    "textlint-filter-rule-comments": "^1.3.0",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
+    "textlint-rule-period-in-list-item": "^1.0.1",
+    "textlint-rule-preset-ja-spacing": "^3.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-prh": "^6.1.0"
   },
   "scripts": {
-    "bff:lint": "redocly lint docs/bff/references/divstack.v1.yaml",
-    "bff:bundle": "redocly bundle docs/bff/references/divstack.v1.yaml -o dist/bff/divstack.v1.yaml",
-    "bff:docs": "redocly build-docs docs/bff/references/divstack.v1.yaml -o dist/bff/api-docs.html"
+    "textlint": "textlint --config .textlintrc.jsonc **/*.md",
+    "markdownlint": "markdownlint-cli2",
+    "cspell": "cspell lint **/*.md",
+    "api:lint": "redocly lint docs/bff/references/divstack.v1.yaml",
+    "api:bundle": "redocly bundle docs/bff/references/divstack.v1.yaml -o dist/bff/divstack.v1.yaml",
+    "api:docs": "redocly build-docs docs/bff/references/divstack.v1.yaml -o dist/bff/api-docs.html",
+    "lint:all": "npm run textlint && npm run markdownlint && npm run cspell && npm run api:lint"
   }
 }

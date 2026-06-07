@@ -1,0 +1,42 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    // 半角／全角スペースを混在させない
+    "no-mixed-zenkaku-and-hankaku-alphabet": true,
+    // 箇条書きの末尾に句点やピリオドを付けない
+    "period-in-list-item": true,
+    // 技術文書向け設定
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 150
+      },
+      "no-exclamation-question-mark": false,
+      "max-kanji-continuous-len": {
+        "max": 10,
+        "allow": [
+          "世界開発者会議"
+        ]
+      }
+    },
+    "preset-ja-spacing": {
+      // 日本語と英語（英単語）の間にスペース
+      "ja-space-between-half-and-full-width": {
+        "space": "always"
+      }
+      // インラインコードの前後にスペース
+      // XXX: 本設定がvscodeには適用されないためコメントアウト
+      // "ja-space-around-code": {
+      //   "before": false,
+      //   "after": false
+      // }
+    },
+    // 表記揺れ設定
+    "prh": {
+      "rulePaths": [
+        "./prh/prh.yaml"
+      ]
+    }
+  }
+}

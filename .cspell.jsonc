@@ -1,0 +1,37 @@
+{
+  "ignorePaths": [
+    "prh.yaml",
+    ".gitignore"
+  ],
+  "words": [
+    "autouse",
+    "checkstyle",
+    "classpath",
+    "commitlint",
+    "dbdiagram",
+    "dbml",
+    "delisted",
+    "divstack",
+    "dotenv",
+    "hankaku",
+    "hikari",
+    "iframe",
+    "initdb",
+    "jdbc",
+    "mybatis",
+    "openapi",
+    "redoc",
+    "redocly",
+    "Respository",
+    "taichi",
+    "tefuna",
+    "textlint",
+    "textlintrc",
+    "TODO",
+    "usecase",
+    "venv",
+    "virtualenvs",
+    "yearmonth",
+    "zenkaku"
+  ]
+}

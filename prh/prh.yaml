@@ -1,0 +1,15 @@
+version: 1
+
+imports:
+  - ./rules/tech.yaml
+
+rules:
+  - expected: VS Code
+    patterns:
+      - vscode
+      - VSCode
+      - VS code
+  - expected: GitHub
+    patterns:
+      - github
+      - Github
